@@ -1,0 +1,49 @@
+@use "../variables" as *;
+
+.productDetail {
+    .close {
+        display: none;
+    }
+    &__info {
+        padding: 8px 24px 0px 24px;
+    }
+    &__price {
+        margin-bottom: 8px;
+        font-weight: bold;
+    }
+    &__title {
+        margin-bottom: 8px;
+    }
+    &__description {
+        margin-bottom: 12px;
+    }
+    button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        span {
+            margin-right: 8px;
+        }
+    }
+}
+
+@media (min-width: 600px) {
+    .productDetail {
+        position: absolute;
+        right: 0px;
+        width: 360px;
+        min-height: 100vh;
+        box-shadow: 0px -1px 5px 0px $Very-light-pink;
+        .close {
+            display: block;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 10px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: $White;
+        }
+    }
+}

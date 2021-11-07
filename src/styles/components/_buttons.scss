@@ -1,0 +1,38 @@
+@use '../variables' as *;
+
+.primary-button {
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: $White;
+    font-size: $md;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    background-color: $Hospital-green;
+    cursor: pointer;
+}
+.secondary-button {
+    width: 100%;
+    height: 50px;
+    color: $Hospital-green;
+    font-size: $md;
+    font-weight: bold;
+    border: 1px solid $Hospital-green;
+    border-radius: 8px;
+    background-color: $White;
+    cursor: pointer;
+}
+.position-button {
+    position: absolute;
+    top: calc(100vh - 190px);
+    width: 300px;
+}
+
+@media (min-width: 600px) {
+    .position-button {
+        position: static;
+        margin-top: 54px;
+    }
+}

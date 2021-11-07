@@ -1,0 +1,13 @@
+@use '../variables' as *;
+.input {
+    height: 30px;
+    padding: 4px;
+    margin-bottom: 12px;
+    font-size: $md;
+    border: none;
+    border-radius: 8px;
+    background-color: $Text-input-field;
+    &::placeholder {
+        font-family: 'Quicksand', sans-serif;
+    }
+}

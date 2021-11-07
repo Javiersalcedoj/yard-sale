@@ -1,0 +1,50 @@
+@use "../variables" as *;
+
+.shoppingCart {
+    width: 100%;
+    padding: 12px;
+    &__title {
+        display: none;
+    }
+    &__total {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 70px;
+        padding: 12px;
+        border-radius: 10px;
+        background-color: $Text-input-field;
+        p {
+            font-weight: bold;
+        }
+    }
+}
+@media (min-width: 600px) {
+    .shoppingCart {
+        position: absolute;
+        right: 0px;
+        width: 360px;
+        min-height: 100vh;
+        border-radius: 10px 0 0 10px;
+        box-shadow: 0px -1px 5px 0px $Very-light-pink;
+        .shoppingCard {
+            width: auto;
+            transform: none;
+        }
+        &__title {
+            display: flex;
+            align-items: center;
+            margin: 12px 0px;
+            p {
+                font-size: $lg;
+                font-weight: bold;
+            }
+            img {
+                margin-right: 14px;
+                width: 24px;
+                transform: rotate(180deg);
+                cursor: pointer;
+            }
+        }
+    }
+}

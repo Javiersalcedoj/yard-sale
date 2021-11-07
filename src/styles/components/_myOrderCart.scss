@@ -1,0 +1,48 @@
+@use '../variables' as *;
+
+.myOrderCart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-radius: 12px;
+    &__date {
+        font-size: $md;
+        font-weight: bold;
+    }
+    &__articles {
+        font-size: $sm;
+        font-weight: 400;
+        color: $Very-light-pink; 
+    }
+    &__prices {
+        font-size: $md;
+        font-weight: bold;
+    }
+    .false {
+        &__span {
+            display: none;
+        }
+    }
+    .true {
+        &__div {
+            transform: translateX(-20px);
+        }
+        &__span {
+            margin-left: 20px;
+            cursor: pointer;
+        }
+    }
+}
+.background {
+    background-color: $Text-input-field;
+}
+@media (min-width: 600px) {
+    .myOrderCart {
+        width: 400px;
+        transform: translateX(-50px);
+    }
+    .myOrder__title {
+        transform: translateX(-50px);
+    }
+}

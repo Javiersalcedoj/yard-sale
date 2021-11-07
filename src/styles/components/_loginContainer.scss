@@ -1,0 +1,41 @@
+@use '../variables' as *;
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 30%;
+    .logo {
+        justify-self: center;
+        width: 150px;
+        margin-bottom: 48px;
+    }
+    a{
+        text-align: center;
+        text-decoration: none;
+        color: $Hospital-green;
+        font-size: $sm;
+        span {
+            color: $Very-light-pink;
+            cursor: default;
+        }
+    }
+}
+.form-container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 300px;
+}
+
+@media (min-width: 600px) {
+    .login {
+        display: grid;
+        place-items: center;
+        height: 100vh;
+        margin-top: 0px;
+        .logo {
+            display: none;
+        }
+    }
+}

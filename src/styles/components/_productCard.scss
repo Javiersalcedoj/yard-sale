@@ -1,0 +1,48 @@
+@use '../variables' as *;
+
+$max-size-card: 240px;
+$min-size-card: 140px;
+
+.productCard {
+    width: $min-size-card;
+    &__image {
+        width: $min-size-card;
+        height: $min-size-card;
+        border-radius: 20px;
+        object-fit: cover;
+        cursor: pointer;
+    }
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 12px;
+    }
+    &__text {
+        p:nth-child(1) {
+            margin-top: 0px;
+            margin-bottom: 4px;
+            font-weight: bold;
+            font-size: $md;
+        }
+        p:nth-child(2) {
+            margin-top: 0px;
+            margin-bottom: 4px;
+            font-size: $sm;
+            color: $Very-light-pink;
+        }
+    }
+    &__addToCard {
+        width: 35px;
+    height: 35px;
+    }
+}
+@media (min-width: 600px) {
+    .productCard {
+        width: $max-size-card;
+        &__image {
+            width: $max-size-card;
+            height: $max-size-card;
+        }
+    }
+}

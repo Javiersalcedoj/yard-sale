@@ -1,0 +1,15 @@
+@use 'variables' as *;
+.main-container {
+    margin: 80px 5px 20px  5px;
+}
+.cards-container {
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(auto-fill, 140px);
+    gap: 24px;
+}
+@media (min-width: 600px) {
+    .cards-container {
+        grid-template-columns: repeat(auto-fill, 240px);
+    }
+}

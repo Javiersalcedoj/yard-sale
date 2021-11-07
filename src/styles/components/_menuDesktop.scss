@@ -1,0 +1,29 @@
+@use '../variables' as *;
+
+.menuDesktop {
+    display: block;
+    width: 140px;
+    height: auto;
+    padding: 20px 20px 0 20px;
+    border: 1px solid $Very-light-pink;
+    border-radius: 6px;
+    ul {
+        list-style: none;
+        text-align: right;
+    }
+    li:last-child a {
+        padding-top: 20px;
+        border-top: 1px solid $Very-light-pink;
+        font-size: $sm;
+        font-weight: 400;
+        color: $Hospital-green;
+    }
+    .title {
+        display: block;
+        margin-bottom: 20px;
+        font-weight: bold;
+        font-size: $md;
+        color: $Black;
+        text-decoration: none;
+    }
+}

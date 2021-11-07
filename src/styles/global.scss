@@ -1,7 +1,8 @@
-$base-color: #ff0000;
-$color:  rgb(black, 0.88);
-
+*{
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+} 
 body {
-    color: $color;
-    background-color:$base-color;
+    font-family: 'Quicksand', sans-serif;
 }

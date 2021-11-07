@@ -1,0 +1,14 @@
+@use '../variables' as *;
+.email-image {
+    display: block;
+    width: 132px;
+    height: 132px;
+    margin: 0 auto 24px auto;
+    border-radius: 50%;
+    background-color: $Text-input-field;
+    img {
+        width: 80px;
+        height: 50px;
+        margin: 41px  26px;
+    }
+}

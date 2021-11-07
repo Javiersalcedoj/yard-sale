@@ -1,0 +1,41 @@
+@use '../variables' as *;
+
+.shoppingCard {
+    display: flex;
+    align-items: center;
+    padding: 12px 0 12px 0;
+    &__img {
+        width: 70px;
+        height: 70px;
+        border-radius: 20px;
+        object-fit: cover;
+    }
+    &__texts {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 12px;
+    }
+    &__name {
+        color: $Very-light-pink;
+    }
+    &__price {
+        margin-left: 8px;
+        font-weight: bold;
+    }
+    .false {
+        display: none;
+    }
+    .true {
+        padding: auto;
+        margin-left: 12px;
+        cursor: pointer;
+    }
+}
+@media (min-width: 600px) {
+    .shoppingCard {
+        width: 400px;
+        transform: translateX(-50px);
+    }
+}

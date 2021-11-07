@@ -1,0 +1,76 @@
+@use 'variables' as *;
+
+.header {
+    display: flex;
+    position: fixed;
+    top: 0px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    padding: 8px 16px;
+    border-bottom: 2px solid $Very-light-pink;
+    background-color: $White;
+    .logo {
+        height: 25px;
+    }
+}
+.header__container--left, .header__container--rigth {
+    display: flex;
+    align-items: center;
+}
+.header__container--left {
+    .categorie {
+        display: none;
+    }
+}
+.header__container--right {
+    display: flex;
+    p {
+        display: none;
+    }
+}
+
+@media (min-width: 765px) {
+    .header {
+        .logo {
+            margin-right: 20px;
+        }
+        .menu {
+            display: none;
+        }
+        &__signin {
+            color: $Hospital-green;
+            cursor: pointer;
+        }
+        &__signup {
+            font-size: $sm;
+            cursor: pointer;
+            img {
+                margin: 0 20px;
+                transform: rotate(90deg);
+            }
+        }
+    }
+    .header__container--left {
+        .categorie {
+            display: flex;
+            a{
+                padding: 8px;
+                font-size: $sm;
+                color: $Very-light-pink;
+                border-radius: 8px;
+                border: 1px solid $White;
+                &:hover {
+                    color: $Hospital-green;
+                    border: 1px solid $Hospital-green;
+                }
+            }
+        }
+    }
+    .header__container--right {
+        p {
+            display: flex;
+        }
+    }
+}

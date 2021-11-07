@@ -1,0 +1,15 @@
+@use '../variables' as *;
+
+.title {
+    margin-bottom: 12px;
+    font-size: $lg;
+    text-align: center;
+}
+.subtitle {
+    margin-top: 0;
+    margin-bottom: 34px;
+    text-align: center;
+    color: $Very-light-pink;
+    font-size: $md;
+    font-weight: 300;
+}
