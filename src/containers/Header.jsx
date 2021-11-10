@@ -22,8 +22,6 @@ const Header = () => {
         setTogleMenuMobile(!togleMenuMobile);
     }
 
-    console.log(togleMenuMobile);
-
     return (
         <nav className="header">
             <img src={menu} alt="menu" className="menu"  onClick={handleToggleMenuMobile}/>

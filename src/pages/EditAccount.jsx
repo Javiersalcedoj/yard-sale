@@ -5,7 +5,7 @@ import AccountContainer from '../containers/AccountContainer';
 import FormText from '../components/FormText';
 import Form from '../components/Form';
 import Label from '../components/Label';
-import Input from '../components/input';
+import Input from '../components/Input';
 
 const EditAccount = () => {
     return (

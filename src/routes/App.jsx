@@ -23,7 +23,7 @@ import AppContext from '../context/AppContext';
 import useInitialState from '../hooks/useInitialState';
 
 import '@styles/components/_buttons.scss';
-import '@styles/Global.scss';
+import '@styles/global.scss';
 
 const App = () => {
     //creamos una constante y esto sera igual al costum hooks contodo lo que retorna 
@@ -31,7 +31,7 @@ const App = () => {
     return (
         //y lo compartimos al value
         <AppContext.Provider value={initialState}>
-            <BrowserRouter>
+            <BrowserRouter basename="/yard-sale" >
                 <Layout>
                     <Switch>
                         <Route exact path="/" component={Home} />

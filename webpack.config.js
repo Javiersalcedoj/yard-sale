@@ -6,9 +6,9 @@ module.exports= {
     entry: './src/index.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'bundle.js',
+        filename: 'yard-sale/bundle.js',
         //----
-        publicPath: '/',
+        publicPath: '/yard-sale/',
     },
     mode: 'development',
     resolve: {

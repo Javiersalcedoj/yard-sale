@@ -5,7 +5,7 @@ import Logos from '../components/Logos'
 import FormText from '../components/FormText';
 import Form from '../components/Form';
 import Label from '../components/Label';
-import Input from '../components/input';
+import Input from '../components/Input';
 
 const title = 'Password recovery';
 const subtitle = 'Inform the email address used to create your account'

@@ -4,7 +4,7 @@ import Logos from '../components/Logos'
 import LoginContainer from '../containers/LoginContainer';
 import Form from '../components/Form';
 import Label from '../components/Label';
-import Input from '../components/input';
+import Input from '../components/Input';
 
 const title = 'Create new password';
 const subtitle = 'Enter a new password for your account';

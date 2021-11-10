@@ -2,9 +2,6 @@ import React, { useRef } from 'react';
 
 import LoginContainer from '../containers/LoginContainer';
 import Logos from '../components/Logos'
-import Form from '../components/Form';
-import Label from '../components/Label';
-import Input from '../components/input';
 
 import '@styles/components/_form.scss'
 
