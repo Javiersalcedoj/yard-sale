@@ -4,16 +4,17 @@ import "@styles/components/_productCard.scss";
 import producImagen from '@image/bikes.jpg'
 import IconAddToCart from '../components/IconAddToCart'
 
-const ProductCard = () => {
+const ProductCard = ({product}) => {
+    const products = product
     return (
         <div className="productCard">
-            <img src={producImagen} alt="bicicleta" className="productCard__image" />
+            <img src={product.images[0]} alt={product.title} className="productCard__image" />
             <div className="productCard__info">
                 <div className="productCard__text">
-                    <p>$120.00</p>
-                    <p>Round shelf</p>
+                    <p>${product.price}</p>
+                    <p>{product.title}</p>
                 </div>
-                <IconAddToCart />
+                <IconAddToCart products={products}/>
             </div>
         </div>
     );

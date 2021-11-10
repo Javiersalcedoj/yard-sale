@@ -8,7 +8,6 @@ import ShoppingCard from '../components/ShoppingCard';
 const MyOrder = () => {
     return (
         <React.Fragment>
-            <Header />
             <AccountContainer>
                 <h1 class="myOrder__title title">My order</h1>
                 <MyOrdeCart backgroung="background" arrow="false"/>

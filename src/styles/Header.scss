@@ -26,7 +26,7 @@
 }
 .header__container--right {
     display: flex;
-    p {
+    .header__signup {
         display: none;
     }
 }
@@ -69,7 +69,7 @@
         }
     }
     .header__container--right {
-        p {
+        .header__signup {
             display: flex;
         }
     }

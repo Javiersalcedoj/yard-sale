@@ -1,10 +1,29 @@
 @use "../variables" as *;
 
 .shoppingCart {
+    position: absolute;
+    top: 60px;
+    right: 0;
     width: 100%;
+    height: calc(100vh - 60px);
     padding: 12px;
+    background-color: $White;
+    overflow-y:scroll;
+
     &__title {
-        display: none;
+        display: flex;
+        align-items: center;
+        margin: 12px 0px;
+        p {
+            font-size: $lg;
+            font-weight: bold;
+        }
+        // img {
+        //     margin-right: 14px;
+        //     width: 24px;
+        //     transform: rotate(180deg);
+        //     cursor: pointer;
+        // }
     }
     &__total {
         display: flex;
@@ -21,30 +40,15 @@
 }
 @media (min-width: 600px) {
     .shoppingCart {
-        position: absolute;
+        top: 60px;
         right: 0px;
         width: 360px;
-        min-height: 100vh;
+        height: 100vh;
         border-radius: 10px 0 0 10px;
         box-shadow: 0px -1px 5px 0px $Very-light-pink;
         .shoppingCard {
             width: auto;
             transform: none;
-        }
-        &__title {
-            display: flex;
-            align-items: center;
-            margin: 12px 0px;
-            p {
-                font-size: $lg;
-                font-weight: bold;
-            }
-            img {
-                margin-right: 14px;
-                width: 24px;
-                transform: rotate(180deg);
-                cursor: pointer;
-            }
         }
     }
 }

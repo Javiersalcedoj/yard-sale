@@ -18,9 +18,12 @@
         padding: 12px;
     }
     &__name {
+        width: 70%;
         color: $Very-light-pink;
     }
     &__price {
+        width: 30%;
+        text-align: right;
         margin-left: 8px;
         font-weight: bold;
     }

@@ -8,7 +8,7 @@ const MenuMobile = () => {
     return (
         <div className="menuMobile">
             <div className="menuMobile__container">
-                <Close />
+                {/* <Close /> */}
                 <Categories />
                 <ul>
                     <li><a href="/">My orders</a></li>

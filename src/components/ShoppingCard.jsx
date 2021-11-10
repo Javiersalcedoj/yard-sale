@@ -1,20 +1,30 @@
-import React from 'react';
+//AGREGAMOS EL CONTEXT
+import React, {useContext} from 'react';
+import AppContext from '../context/AppContext';
 
 import '@styles/components/_shoppingCard.scss';
-import product from '@image/bikes.jpg';
 
 import Close from './Close';
 
-const ShoppingCard = (prop) => {
-    const iconClose = prop.iconClose;
+const ShoppingCard = ({ iconClose, product }) => {
+    const { removeFromCart } = useContext (AppContext);
+
+    const handleRemove = product => {
+        removeFromCart(product);
+    }
+
     return (
         <div className="shoppingCard">
             <figure>
-                <img src={product} alt="bikes" className="shoppingCard__img"/>
+                <img src={product.images[0]} alt={product.title} className="shoppingCard__img"/>
             </figure>
             <div className="shoppingCard__texts">
-                <p className="shoppingCard__name">Bikes</p>
-                <p className="shoppingCard__price">$30.00<span className={iconClose}><Close /></span></p>
+                <p className="shoppingCard__name">{product.title}</p>
+                <p className="shoppingCard__price">${product.price}
+                    <span className={iconClose} onClick= {()=> handleRemove(product) }>
+                        <Close />
+                    </span>
+                </p>
             </div>
         </div>
     );

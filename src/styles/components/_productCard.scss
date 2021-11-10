@@ -11,6 +11,7 @@ $min-size-card: 140px;
         border-radius: 20px;
         object-fit: cover;
         cursor: pointer;
+        background-color: $Very-light-pink;
     }
     &__info {
         display: flex;

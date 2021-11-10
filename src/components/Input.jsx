@@ -7,7 +7,7 @@ const Input = (prop) => {
     const placeholder = prop.placeholder;
 
     return (
-        <input type={type} name id={id} className="input" placeholder={placeholder} />
+        <input type={type} name={id} id={id} className="input" placeholder={placeholder} />
     );
 }
 

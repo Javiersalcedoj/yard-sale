@@ -2,11 +2,15 @@
 
 .menuDesktop {
     display: block;
+    position: absolute;
+    top: 60px;
+    right: 50px;
     width: 140px;
     height: auto;
     padding: 20px 20px 0 20px;
     border: 1px solid $Very-light-pink;
     border-radius: 6px;
+    background-color: $White;
     ul {
         list-style: none;
         text-align: right;
@@ -25,5 +29,10 @@
         font-size: $md;
         color: $Black;
         text-decoration: none;
+    }
+}
+@media (max-width: 765px) {
+    .menuDesktop {
+        display: none;
     }
 }
