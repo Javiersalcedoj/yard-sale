@@ -9,7 +9,7 @@ const MyOrders = () => {
         <React.Fragment>
             <Header />
             <AccountContainer>
-                <h1 class="myOrder__title title">My orders</h1>
+                <h1 className="myOrder__title title">My orders</h1>
                 <MyOrdeCart backgroung="" arrow="true"/>
                 <MyOrdeCart backgroung="" arrow="true"/>
                 <MyOrdeCart backgroung="" arrow="true"/>

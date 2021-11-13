@@ -4,11 +4,11 @@ import '@styles/components/_menuDesktop.scss'
 
 const MenuDesktop = () => {
     return (
-        <div class="menuDesktop">
+        <div className="menuDesktop">
             <ul>
-                <li><a href="/" class="title">My orders</a></li>
-                <li><a href="/" class="title">My account</a></li>
-                <li><a href="/" class="title">Sign out</a></li>
+                <li><a href="/" className="title">My orders</a></li>
+                <li><a href="/" className="title">My account</a></li>
+                <li><a href="/" className="title">Sign out</a></li>
             </ul>
         </div>
     );

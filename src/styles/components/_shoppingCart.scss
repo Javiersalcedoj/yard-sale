@@ -8,7 +8,6 @@
     height: calc(100vh - 60px);
     padding: 12px;
     background-color: $White;
-    overflow-y:scroll;
 
     &__title {
         display: flex;
@@ -18,12 +17,30 @@
             font-size: $lg;
             font-weight: bold;
         }
-        // img {
-        //     margin-right: 14px;
-        //     width: 24px;
-        //     transform: rotate(180deg);
-        //     cursor: pointer;
-        // }
+        img {
+            margin-right: 14px;
+            width: 24px;
+            transform: rotate(180deg);
+            cursor: pointer;
+        }
+    }
+    &__products {
+        max-height: calc(100vh - 326px);
+        overflow-y: auto;
+        &::-webkit-scrollbar {
+            width: 5px;
+        }
+        &::-webkit-scrollbar-track:hover {
+            background-color: $Text-input-field;
+        }
+        &::-webkit-scrollbar-thumb {
+            width: 3px;
+            border-radius: 10px;
+            background-color: $Text-input-field;
+        }
+        &::-webkit-scrollbar-thumb:hover {
+            background-color: $Very-light-pink;
+        }
     }
     &__total {
         display: flex;

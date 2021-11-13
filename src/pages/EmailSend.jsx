@@ -14,7 +14,7 @@ const EmailSend = () => {
             <Logos />
             <FormText title={title} subtitle={subtitle}/>
             <EmailImage />
-            <button class="primary-button">Login</button>
+            <button className="primary-button">Login</button>
 
             <a href="/"> <span>Didn't receive the email? </span>Back to Log in</a>
                       

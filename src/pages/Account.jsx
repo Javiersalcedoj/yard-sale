@@ -14,11 +14,11 @@ const Account = () => {
                 <FormText title="My account"/>
                 <Form>
                     <Label id="name" text="Name"/>
-                    <p class="value">Camila Yakoo"</p>
+                    <p className="value">Camila Yakoo"</p>
                     <Label id="email" text="Email address"/>
-                    <p class="value">yardsale@example.com</p>
+                    <p className="value">yardsale@example.com</p>
                     <Label id="password" text="Password"/>
-                    <p class="value">••••••••</p>
+                    <p className="value">••••••••</p>
                     <input type="submit" value="Edit" className="secondary-button position-button" />
                 </Form>
             </AccountContainer>

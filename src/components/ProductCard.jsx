@@ -1,7 +1,6 @@
 import React from 'react';
 import "@styles/components/_productCard.scss";
 
-import producImagen from '@image/bikes.jpg'
 import IconAddToCart from '../components/IconAddToCart'
 
 const ProductCard = ({product}) => {

@@ -2,6 +2,8 @@ import { useState } from "react";
 
 const initialState = {
     cart: [],
+    shoppingCart: false,
+    menuMobile: false,
 };
 
 const useInitialState = () => {
@@ -21,10 +23,26 @@ const useInitialState = () => {
         })
     }
 
+    const openShoppingCart = () => {
+        setState({
+            ...state,
+            shoppingCart: !state.shoppingCart
+        });
+    } 
+
+    const openMenuMobile = () => {
+        setState({
+            ...state,
+            menuMobile: !state.menuMobile
+        })
+    }
+
     return {
         state,
         addToCart,
         removeFromCart,
+        openShoppingCart,
+        openMenuMobile,
     }
 }
 export default useInitialState

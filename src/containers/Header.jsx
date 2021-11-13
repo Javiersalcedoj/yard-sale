@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
+import AppContext from '../context/AppContext'
 
 import '@styles/Header.scss';
 import Categories from '../components/Categories';
@@ -17,20 +18,17 @@ const Header = () => {
         setToggleMenuDesktop(!toggleMenuDesktop);
     }
 
-    const [togleMenuMobile, setTogleMenuMobile] = useState (false);
-    const handleToggleMenuMobile = () => {
-        setTogleMenuMobile(!togleMenuMobile);
-    }
+    const { state, openMenuMobile } = useContext (AppContext)
 
     return (
         <nav className="header">
-            <img src={menu} alt="menu" className="menu"  onClick={handleToggleMenuMobile}/>
+            <img src={menu} alt="menu" className="menu"  onClick={()=> openMenuMobile()}/>
             <div className="header__container--left">
                 <Logos />
                 <Categories />
             </div>
             <div className="header__container--right">
-                {/* <p class="header__signin">Sign in</p> */}
+                {/* <p className="header__signin">Sign in</p> */}
 
                 <p className="header__signup" onClick={handleToggleMenuDesktop} >
                     camilayokoo@gmail.com
@@ -39,7 +37,7 @@ const Header = () => {
                 <ShoppingNotification />
             </div>
             {toggleMenuDesktop && <MenuDesktop />}
-            {togleMenuMobile && <MenuMobile />}
+            {state.menuMobile && <MenuMobile />}
         </nav>
     );
 }

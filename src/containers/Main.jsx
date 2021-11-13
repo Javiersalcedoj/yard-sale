@@ -6,7 +6,7 @@ import useGetProducts from '../hooks/useGetProducts';
 
 import "@styles/Main.scss"
 
-const API = 'https://api.escuelajs.co/api/v1/products';
+const API = 'https://api.escuelajs.co/api/v1/products?limit=12&offset=1';
 
 const Main = () => {
     //hacemos ahora el llamdo del eso

@@ -34,29 +34,9 @@ const Login = () => {
                 <button onClick={handleSubmit} className="primary-button">Log in</button>
                 <a href="/">Forgot my password</a>
             </form>
-            <button class="secondary-button position-button">Sign up</button>
+            <button className="secondary-button position-button">Sign up</button>
         </LoginContainer>
     );
 }
 
 export default Login;
-
-
-
-{/* <form action="/" className='form' ref={form}>
-                <Label id="email" text="Email address"/>
-                <Input type="email" id="email" placeholder="camilayokii@gamil.com"/>
-                <Label id="password" text="Password"/>
-                <Input type="password" id="password" placeholder="••••••••"/>
-                <button className=" primary-button" onClick={handleSubmit}>Log in</button>
-                <a href="/">Forgot my password</a>
-            </form>
-            {/* </Form> */}
-            {/* <Form ref={form}>
-                <Label id="email" text="Email address"/>
-                <Input type="email" id="email" placeholder="camilayokii@gamil.com"/>
-                <Label id="password" text="Password"/>
-                <Input type="password" id="password" placeholder="••••••••"/>
-                <button className=" primary-button" onClick={handleSubmit}>Log in</button>
-                <a href="/">Forgot my password</a>
-            </Form> */} 

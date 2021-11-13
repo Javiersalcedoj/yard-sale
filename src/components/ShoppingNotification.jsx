@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
 import AppContext from '../context/AppContext'
 
 import ShoppingCart from '../pages/ShoppingCart'
@@ -10,21 +10,17 @@ import shopping_cart_notification from '@icons/icon_shopping_cart_notification.s
 
 
 const ShoppingNotification = () => {
-    const { state } = useContext (AppContext)
+    const { state, openShoppingCart } = useContext (AppContext)
 
-    const [toggle, setToggle] = useState(false)
-    const handleToggle = () => {
-        setToggle(!toggle)
-    } 
     return (
         <React.Fragment>
             <img 
                 src={ state.cart.length > 0 ?  shopping_cart_notification: shopping_cart} 
                 alt="cart" 
                 className="shoppingNotification"
-                onClick={()=> handleToggle()}
+                onClick={()=> openShoppingCart()}
             />
-            {toggle && <ShoppingCart />}
+            {state.shoppingCart && <ShoppingCart />}
         </React.Fragment>
     );
 }
