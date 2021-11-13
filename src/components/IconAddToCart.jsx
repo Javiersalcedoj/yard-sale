@@ -22,14 +22,22 @@ const IconAddToCart = ({products}) => {
         }
 
     }
+    // const changeImg = (product) => {
+    //     if (!state.cart.includes(product)) {
+    //          setCart(addToCartImage)
+    //          console.log(hola)
+    //     }
+    // };
+
     
     return (
         <React.Fragment>
-            <img 
+            {/* <img 
                 src={cart} alt="cart" className="iconAddToCard" 
                 onClick={()=> handleClick(products)}
-                id={`addtocard${products.id}`}
             />
+            {()=> changeImg(products)} */}
+            {  state.cart.includes(products) ? <img className="iconAddToCard" src={addedToCartImage} alt="added to cart" onClick={()=> handleClick(products)}/>  : <img className="add-to-cart-btn pointer" src={addToCartImage} alt="add to cart"  onClick={()=> handleClick(products)}/> }
         </React.Fragment>
     );
 }
